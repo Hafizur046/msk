@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin.css">
+    <script src="https://kit.fontawesome.com/74c4238fc1.js" crossorigin="anonymous"></script>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="grid_main">
+        <div class="sideNav">        
+            <div class="navigation">
+            <span id="close"><i class="fas fa-times-circle"></i></span>
+            <ul>
+                <li><a href="/admin">Root</a></li>
+                <li><a href="/">Home</a></li>
+                <li> <a href="/admin/featured"> Featured</a></li>
+                <li>Video <span><i class="fas fa-chevron-down"></i></span>
+                    <ul class="sbc">
+                        <li><a href="/admin/upload">Upload</a></li>
+                        <li><a href="/admin/delete">Delete</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms Of Services</a></li>
+                    <li><a href="#">Legal Certificates</a></li>
+                </ul>
+                <h1 class="title">MSK Shakil</h1>
+            </div>
+            <div class="body">
+                <h1>Welcome to Admin Panel</h1>
+                <p>Here you wil be able to set or change the featured videos on the <a href="/admin/featured"><em>Featured</em></a> page <br> <br>
+                In the featured page you will have to select the order of the video you want to set as featured and then you will have to give the ID of the featured video.
+                In any page when you click on any video you are redirected to a page /video/{ID} . The thing after the video/ is the ID.
+                </p>
+                <p>To upload any video go to the <a href="/admin/upload"> <em> video>upload</em></a> page <br> <br>
+                There you will be asked to fill a title field a discription field and a embeded field. You will be also asked to upload an thumbnail. All fields are required. In the embeded field you will have to put the embeded video from youtube.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

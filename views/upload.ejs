@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin.css">
+    <script src="https://kit.fontawesome.com/74c4238fc1.js" crossorigin="anonymous"></script>
+    <style>
+        #disc{
+            width: 100%;
+        }
+        .upload_form{
+            margin: 0 , 50px;
+        }
+    </style>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="grid_main">
+        <div class="sideNav">        <div class="navigation">
+            <span id="close"><i class="fas fa-times-circle"></i></span>
+            <ul>
+                <li><a href="/admin">Root</a></li>
+                <li><a href="/">Home</a></li>
+                <li> <a href="/admin/featured"> Featured</a></li>
+                <li>Videos <span><i class="fas fa-chevron-down"></i></span>
+                    <ul class="sbc">
+                        <li><a href="/admin/upload">Upload</a></li>
+                        <li><a href="/admin/delete">Delete</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms Of Services</a></li>
+                    <li><a href="#">Legal Certificates</a></li>
+                </ul>
+                <h1 class="title">MSK Shakil</h1>
+            </div>
+            <div class="upload_form">
+                <form action="/admin/upload" method="POST" enctype="multipart/form-data" >
+                    <label for="title">Title:</label><br>
+                    <input type="text" name="title"><br><br>
+                    <label for="iscription">Discription:</label><br>
+                    <textarea id="disc" name="discription" id="" cols="30" rows="10"></textarea><br><br>
+                    <label for="title">Iframe:</label><br>
+                    <input type="text" name="iframe"><br><br>
+                    <label for="catagory">Catagory:</label><br>
+                    <select name="catagory" id="cartagory">
+                        <option value="review">Review</option>
+                        <option value="best_deals">Best Deals</option>
+                        <option value="latest_tech">Latest tech</option>
+                        <option value="basic_guide">Basic guide</option>
+                        <option value="pc_building_guide">PC Building Guide</option>
+                    </select><br><br>
+                    <label for="thumbnail">Thumbnail:</label>
+                    <input type="file" name="thumbnail"><br><br>
+                    <input type="submit" value="Post">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

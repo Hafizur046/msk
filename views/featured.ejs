@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin.css">
+    <script src="https://kit.fontawesome.com/74c4238fc1.js" crossorigin="anonymous"></script>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="grid_main">
+        <div class="sideNav">        <div class="navigation">
+            <span id="close"><i class="fas fa-times-circle"></i></span>
+            <ul>
+                <li><a href="/admin">Root</a></li>
+                <li><a href="/">Home</a></li>
+                <li> <a href="/admin/featured"> Featured</a></li>
+                <li>Videos <span><i class="fas fa-chevron-down"></i></span>
+                    <ul class="sbc">
+                        <li><a href="/admin/upload">Upload</a></li>
+                        <li><a href="/admin/delete">Delete</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms Of Services</a></li>
+                    <li><a href="#">Legal Certificates</a></li>
+                </ul>
+                <h1 class="title">MSK Shakil</h1>
+            </div>
+            <div class="featured_form">
+                <form action="/admin/featured" method="POST">
+                    <label for="">Order:</label>
+                    <select name="order" id="order">
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <label for="linked_id">ID:</label>
+                    <input type="text" placeholder="ID" name="linked_id" required>
+                    <input type="submit" name="submit" id="" value="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
